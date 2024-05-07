@@ -1,6 +1,8 @@
 import Logo from "./images/Logo.png"
 import displayMenu from './pages/menuPage'
 import displayHomePage from './pages/homePage'
+import displayReservations from "./pages/reservationsPage"
+import displayAbout from "./pages/aboutPage"
 
 const displayHeader = function () {
     const myIcon = new Image()
@@ -38,9 +40,12 @@ const displayHeader = function () {
         })
         aboutButton.addEventListener('click', () => {
             clickedButton = 'about'
+            displayAbout()
         })
         reservationsButton.addEventListener('click', () => {
             clickedButton = 'reservations'
+            displayReservations()
+
         })
 
         return navigation
