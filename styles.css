@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #7e7e7e;
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    background-image:
+        linear-gradient(45deg, #444444 25%, transparent 25%),
+        linear-gradient(-45deg, #444444 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #444444 75%),
+        linear-gradient(-45deg, transparent 75%, #444444 75%);
+}
+
+#header > img {
+    height: 160px;
+    width: 200px;
+}   
+
+#header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(0,0,0), rgb(0,0,0,0.35));
+
+}
+
+#header>nav>button {
+    margin: 0px 20px;
+    background: linear-gradient(#bbbbbb, #474747);
+    border-radius: 50px;
+    height: 50px;
+    width: 130px;
+    font-size: 18px;
+    border: 5px solid #464646;
+    font-weight: 500;
+}
+
+#header>nav>button:hover {
+    filter: brightness(80%);
+}
