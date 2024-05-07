@@ -40,4 +40,5 @@ header {
 
 #header>nav>button:hover {
     filter: brightness(80%);
+    cursor: pointer;
 }

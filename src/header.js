@@ -23,7 +23,7 @@ const displayHeader = function () {
 
 
         const aboutButton = document.createElement('Button')
-        aboutButton.textContent = 'HomeButton'
+        aboutButton.textContent = 'About'
         navigation.appendChild(aboutButton)
 
         const reservationsButton = document.createElement('Button')
@@ -31,19 +31,15 @@ const displayHeader = function () {
         navigation.appendChild(reservationsButton)
 
         homeButton.addEventListener('click', () => {
-            clickedButton = 'home'
             displayHomePage()
         })
         menuButton.addEventListener('click', () => {
-            clickedButton = 'menu'
             displayMenu()
         })
         aboutButton.addEventListener('click', () => {
-            clickedButton = 'about'
             displayAbout()
         })
         reservationsButton.addEventListener('click', () => {
-            clickedButton = 'reservations'
             displayReservations()
 
         })
